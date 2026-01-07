@@ -13,7 +13,7 @@
       id="map"
       src="https://macarte.ign.fr/carte/MAP_ID/CARTE_TITLE"
       width="100%"
-      height="480px"
+      height="1000px"
       allow="geolocation clipboard-read clipboard-write">
     </iframe>
 
