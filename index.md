@@ -9,14 +9,14 @@
 
   <body>
     <!-- 2. <iframe> qui va contenir la carte a afficher -->
-    <iframe
-      id="map"
-      src="https://macarte.ign.fr/carte/MAP_ID/CARTE_TITLE"
-      width="100%"
-      height="1000px"
-      allow="geolocation clipboard-read clipboard-write">
-    </iframe>
-
+  <iframe
+id="map"
+ src="https://macarte.ign.fr/carte/oPX2Q1/Evolution-de-l-ensoleillement-de-la-France-entre-2015-et-2023?noZoom"
+ width="100%"
+height="100%"
+allow="geolocation clipboard-read; clipboard-write">
+</iframe>
+   
     <script>
       // Variable globale
       var mapAPI = null;
