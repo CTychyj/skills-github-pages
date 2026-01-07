@@ -1,6 +1,7 @@
-# GitHub Pages
+# TRY Github Page
 
 <img src="https://octodex.github.com/images/Professortocat_v2.png" align="right" height="200px" />
+**Hi, I'm CTychyj, i try to figure out the github page. I'm new on Github and it's a little bit scary**.
 
 Hey CTychyj!
 
