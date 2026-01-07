@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html>
   <head>
@@ -8,21 +9,31 @@
 
   <body>
     <!-- 2. <iframe> qui va contenir la carte a afficher -->
-    <iframe id="map" src="https://macarte.ign.fr/carte/MAP_ID/CARTE_TITLE" width="100%" height="480px" allow="geolocation clipboard-read clipboard-write"></iframe>
+    <iframe
+      id="map"
+      src="https://macarte.ign.fr/carte/MAP_ID/CARTE_TITLE"
+      width="100%"
+      height="480px"
+      allow="geolocation clipboard-read clipboard-write">
+    </iframe>
+
     <script>
-    // Variable globale
-    var mapAPI = null;
-    // 3. Récupération de l'API lorsque la carte est chargée
-    MapIFrameAPI.ready('map', function(api) {
-      // 4. Récupération de l'API pour un accès global
-      mapAPI = api;
-      // 5. Center la carte sur Paris
-      mapAPI.setCenter([2.33, 48.85]);
-      // 6. Placer un écouteur pour récupérer les objets sélectionnés
-      mapAPI.on('select', function(sel) {
-        console.log(sel);
-      })
-    })
+      // Variable globale
+      var mapAPI = null;
+
+      // 3. Récupération de l'API lorsque la carte est chargée
+      MapIFrameAPI.ready('map', function(api) {
+        // 4. Récupération de l'API pour un accès global
+        mapAPI = api;
+
+        // 5. Center la carte sur Paris
+        mapAPI.setCenter([2.33, 48.85]);
+
+        // 6. Placer un écouteur pour récupérer les objets sélectionnés
+        mapAPI.on('select', function(sel) {
+          console.log(sel);
+        });
+      });
     </script>
   </body>
 </html>
